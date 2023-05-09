@@ -79,9 +79,9 @@
             </div>
           </div>
           <div class="col-md-2">
-            <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
+            <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center" >
               <div>
-                <h5>Flora & Fauna</h5>
+                <a class="flora" href="florafauna">Flora&Fauna</a>
               </div>
               <img src="{{ asset('assets/icons/forest.png') }}" height="40"
               width="40" alt="">

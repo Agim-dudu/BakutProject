@@ -19,7 +19,7 @@ body{
 }
 
 #hero{
-    background-image: url('../../assets/images/pulaubakut.jpg');
+    background-image: url('../../assets/images/bakut.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,7 +28,7 @@ body{
 
 .hero-tittle{
     padding-top: 200px;
-    color: #e6e6e6;
+    color: #ffffff
 }
 
 .hero-text{
@@ -36,20 +36,68 @@ body{
     font-weight: 600;
 }
 
+.flora{
+    font-size: 18px;
+    color: black;
+}
+
 #ff{
-    background-image: url('../../assets/images/bekantan.jpg');
+    background-image: url('../../assets/images/pulaubakut.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 600px;
 }
 
 .ff-tittle{
-    padding-top: 200px;
+    padding-top: 300px;
+    padding-right: 500px;
+    text-align: center;
     color: #e6e6e6;
 }
 
 .ff-text{
+    text-align: center;
     font-size: 65px;
     font-weight: 600;
 }
+
+.stripe{
+    height: 5px;
+    width: 40px;
+    background-color: #259652;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-body h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .card-body p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #666;
+  }
