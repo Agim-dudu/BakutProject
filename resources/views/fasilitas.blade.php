@@ -54,7 +54,40 @@
           <h1 class="ff-text">Fasilitas yang tersedia <br>di pulau Bakut</h1>
         </div>
       </div>
+
+
     </section>
+
+    <div class="container">
+        <div class="row g-2 g-md-3" style="padding: 20px">
+          <div class="col-md-3" >
+            <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
+              <div>
+                <h5>Musholla</h5>
+              </div>
+              <img src="{{ asset('assets/icons/mosque.png') }}" height="80"
+              width="80" alt="">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
+              <div>
+                <h5>Menara Pandang</h5>
+              </div>
+              <img src="{{ asset('assets/icons/lodge.png') }}" height="80"
+              width="80" alt="">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
+              <div>
+                <h5>WC</h5>
+              </div>
+              <img src="{{ asset('assets/icons/toilet.png') }}" height="80"
+              width="80" alt="">
+            </div>
+          </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/assets/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
