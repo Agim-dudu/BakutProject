@@ -54,7 +54,42 @@
           <h1 class="ff-text">Pembelian Tiket <br>Via website</h1>
         </div>
       </div>
-    </section>
+    </section><br>
+
+    <div class="d-flex justify-content-center">
+
+    <form method="POST" action="proses_form.php" >
+        <h2>Pemesanan Tiket</h2><br>
+
+        <div class="">
+            <i class=""></i>
+            <input type="text" placeholder="Nama" required class="" />
+            <span class="form__bar"></span>
+        </div><br>
+        <div class="">
+            <i class=""></i>
+            <input type="text" placeholder="Email" required class="" />
+            <span class="form__bar"></span>
+        </div><br>
+        <div class="">
+            <i class=""></i>
+            <input type="text" placeholder="No.hp" required class="" />
+            <span class="form__bar"></span>
+        </div><br>
+        <div class="">
+            <i class=""></i>
+            <input type="number" placeholder="Jumlah Tiket" required class="" />
+            <span class="form__bar"></span>
+        </div><br>
+        <div class="">
+            <i class=""></i>
+            <input type="date" placeholder="Jumlah Tiket" required class="" />
+            <span class="form__bar"></span>
+        </div><br>
+
+        <input type="submit" value="pesan">
+    </form>
+    </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/assets/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
