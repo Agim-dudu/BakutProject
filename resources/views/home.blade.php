@@ -55,12 +55,14 @@
           <h4>Taman Wisata Alam yang merupakan habitat Bekantan dengan tipe ekosistem hutan mangrove</h4>
         </div>
       </div>
-    </section>
+    </section><br>
 
     <section id="program" style="margin-top: -30px">
       <div class="container">
         <div class="row g-2 g-md-3">
+
           <div class="col-md-2">
+            <a class="nav-link active" href="/deskripsi">
             <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
               <div>
                 <h5>Deskripsi</h5>
@@ -68,8 +70,11 @@
               <img src="{{ asset('assets/icons/product-description.png') }}" height="40"
               width="40" alt="">
             </div>
+            </a>
           </div>
+
           <div class="col-md-2">
+            <a class="nav-link active" href="/tiket">
             <div class="bg-white rounded-2 shadow p-3 d-flex justify-content-between align-items-center">
               <div>
                 <h5>Tiket</h5>
@@ -77,8 +82,11 @@
               <img src="{{ asset('assets/icons/ticket.png') }}" height="40"
               width="40" alt="">
             </div>
+            </a>
           </div>
+
           <div class="col-md-2">
+            <a class="nav-link active" href="/florafauna">
             <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
               <div>
                 <h5>Flora & Fauna</h5>
@@ -86,8 +94,11 @@
               <img src="{{ asset('assets/icons/forest.png') }}" height="40"
               width="40" alt="">
             </div>
+            </a>
           </div>
+
           <div class="col-md-2">
+            <a class="nav-link active" href="/gallery">
             <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
               <div>
                 <h5>Galeri</h5>
@@ -95,8 +106,11 @@
               <img src="{{ asset('assets/icons/image-gallery.png') }}" height="40"
               width="40" alt="">
             </div>
+            </a>
           </div>
+
           <div class="col-md-2">
+            <a class="nav-link active" href="/peta">
             <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
               <div>
                 <h5>Denah</h5>
@@ -104,8 +118,11 @@
               <img src="{{ asset('assets/icons/route.png') }}" height="40"
               width="40" alt="">
             </div>
+            </a>
           </div>
+
           <div class="col-md-2">
+            <a class="nav-link active" href="/fasilitas">
             <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center">
               <div>
                 <h5>Fasilitas</h5>
@@ -114,6 +131,8 @@
               width="40" alt="">
             </div>
           </div>
+          </a>
+
         </div>
       </div>
 
