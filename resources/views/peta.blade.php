@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wisata Pulau Bakut</title>
-    <link href="{{ asset('/') }}assets/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link href="{{ asset('/') }}assets/plugins/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="{{ asset('/') }}assets/css/style.css" rel="stylesheet">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="assets/plugins/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/deskripsi.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark py-3 fixed-top">
@@ -48,14 +48,19 @@
       </div>
     </nav>
 
-    <section id="ff" class="px-0">
+    <section id="hero" class="px-0">
       <div class="container text-center text-white">
-        <div class="ff-tittle">
-          <h1 class="ff-text">Selamat Datang <br>Di Wisata Pulau Bakut</h1>
+        <div class="hero-tittle">
+          <h1 class="hero-text">Wisata Pulau Bakut</h1>
+          <h4>Jam Buka :</h4>
         </div>
       </div>
     </section>
+    <div class="box">
+      <h1>Peta</h1>
+      <img src="assets/images/peta.png">
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/assets/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/assets/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 </html>

@@ -19,7 +19,7 @@ body{
 }
 
 #hero{
-    background-image: url('../../assets/images/pulaubakut.jpg');
+    background-image: url("/assets/images/bekantan.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -52,4 +52,18 @@ body{
 .ff-text{
     font-size: 65px;
     font-weight: 600;
+}
+.container{
+    padding-top: 20px;
+}
+
+.box{
+    padding: 20px;
+    
+}
+.box h1{
+    text-align: center;
+    font-size:40px;
+    font-weight: 600;
+    
 }

@@ -51,7 +51,7 @@
     <section id="ff" class="px-0">
       <div class="container text-center text-white">
         <div class="ff-tittle">
-          <h1 class="ff-text">Selamat Datang <br>Di Wisata Pulau Bakut</h1>
+          <h1 class="ff-text">Pembelian Tiket <br>Via website</h1>
         </div>
       </div>
     </section>
