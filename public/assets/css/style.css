@@ -56,6 +56,7 @@ a {
 /* Header */
 header {
   position: absolute;
+  font-size: 50px;
   top: 0;
   left: 0;
   width: 100%;
@@ -92,7 +93,8 @@ header {
     header .navbar .nav-link {
       padding: 1.7rem 1rem;
       outline: none !important;
-      font-size: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
       color: rgba(255, 255, 255, 0.8) !important; }
       @media (max-width: 1199.98px) {
         header .navbar .nav-link {
