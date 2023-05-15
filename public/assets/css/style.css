@@ -47,7 +47,8 @@ a {
   .hero1 {
     height: auto;
     width: 100%;
-    background-color: #007bff;}
+    height: 100vh;
+    background-color: #259632}
   .hero2 {
     height: 100vh;
     width: 100%;

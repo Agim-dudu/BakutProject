@@ -36,7 +36,7 @@
                 <a class="nav-link active" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Recipes</a>
+                <a class="nav-link" href="#Beranda">Beranda</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
@@ -47,7 +47,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#peta">Peta</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">News</a>
@@ -68,10 +68,18 @@
     
 
     <div class="hero" style="background-image: url('{{ asset('/') }}assets/images/home.png')"> 
-      <p style="color:azure; font-size:100px; padding-left:80px; padding-top:400px; font-weight:bold;">Selamat Datang</p> 
+      <div style='padding-left:80px; padding-top:400px'>
+        <p style="color:azure; font-size:70px; font-weight:bold;">Selamat Datang</p>
+        <p style="color:azure; font-size:50px; font-weight:bold;">Buka Setiap Hari Kecuali Jum'at</p>
+        <Button style="font-weight:bold; font-size:20px; padding:9px; border-radius:10px; background-color:#259632; color:white;">Jelajahi</Button>
+      </div>
+      
     </div>
-    <div class="hero1" ></div>
-    <div class="hero2" ></div>
+    <div class="hero1" id="Beranda">
+      <div class="hero1-box"></div>
+    </div>
+    {{-- <div class="hero2" ></div> --}}
+    <div class="hero2" id="peta"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.157270851203!2d114.54942744174642!3d-3.214869698164142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de43da58862e00f%3A0x30b1c9189a07861d!2sPulau%20Bakut!5e0!3m2!1sid!2sid!4v1684171467285!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
   
 
 

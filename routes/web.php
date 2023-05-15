@@ -1,5 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TesrController;
 use App\Http\Controllers\Auth\LoginController;
 
 /*
@@ -17,7 +18,9 @@ Route::get('/', function () {
     return view('home');
 });
 Route::get('/login/google', [LoginController::class, 'redirectToGoogle']);
-Route::get('/callback', [LoginController::class, 'handleGoogleCallback']);
+Route::get('/auth/google/callback', [LoginController::class, 'handleGoogleCallback']);
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/login', [LoginController::class, 'show'])->name('login');
+Route::get('/test', [TesrController::class, 'show'])->name('test');
+// Route::get('/home', [LoginController::class, 'show'])->name('home');
