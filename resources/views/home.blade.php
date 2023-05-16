@@ -4,6 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="{{ asset('/') }}assets/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
 
@@ -50,7 +52,7 @@
                 <a class="nav-link" href="#peta">Peta</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
+                <a class="nav-link" href="#florafauna">Flora & Fauna</a>
               </li>
             </ul>
 
@@ -75,11 +77,30 @@
       </div>
       
     </div>
-    <div class="hero1" id="Beranda">
-      <div class="hero1-box"></div>
-    </div>
     {{-- <div class="hero2" ></div> --}}
-    <div class="hero2" id="peta"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.157270851203!2d114.54942744174642!3d-3.214869698164142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de43da58862e00f%3A0x30b1c9189a07861d!2sPulau%20Bakut!5e0!3m2!1sid!2sid!4v1684171467285!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+    <div class="hero2" id="peta">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.157270851203!2d114.54942744174642!3d-3.214869698164142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de43da58862e00f%3A0x30b1c9189a07861d!2sPulau%20Bakut!5e0!3m2!1sid!2sid!4v1684171467285!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="hero3" id="florafauna" >
+      <div class="fauna-box1" style="background-color: #ffff; font-weight:bold;" >Flora & Fauna Di<br> Taman Wisata Alam <br>Pulau Bakut</div>
+      <div class="fauna-box2" style="background-color: #259632">
+        <div class="fauna-content1" >
+          <a href="{{ route('flora') }}">
+            <img src="{{ asset('assets/images/bekantann.jpg') }}" alt="#" width="200px" height="250px">
+          <div class="konten">
+            <h2>Flora</h2>
+        <div class="fauna-content2" style="padding-top: 20px;">
+          <a href="{{ route('flora') }}">
+            <img src="{{ asset('assets/images/bekantann.jpg') }}" alt="#" width="200px" height="250px">
+          <div class="konten">
+            <h2>Flora</h2>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+
   
 
 

@@ -53,6 +53,16 @@ a {
     height: 100vh;
     width: 100%;
     background-color: #f8fbff;}
+  .hero3 {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/pulaubakut.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    position: absolute;}
 
 /* Header */
 header {
@@ -149,3 +159,48 @@ header {
         color: #007bff !important;
         -webkit-box-shadow: 2px 0 30px -5px rgba(0, 0, 0, 0.2);
         box-shadow: 2px 0 30px -5px rgba(0, 0, 0, 0.2); }
+
+/* flora fauna */
+.fauna-box1{
+  display: grid;
+  color: #259632;
+  font-size: 65px;
+  font-weight: 600;
+  place-items: center;
+  text-align: center;
+}
+.fauna-box2{
+  display: grid;
+  color: #ffffff;
+  font-size: 65px;
+  font-weight: 600;
+  place-items: center;
+  text-align: center;
+}
+.fauna-box2 img{
+    object-fit: cover;
+    box-shadow: 10px 5px 5px 0px rgb(255, 255, 255);
+    border-radius: 30px;
+    text-align: center;
+    width: 200px;
+    transition: transform;
+}
+/* gamabr jedak jeduk */
+/* .fauna-content1 :hover{
+  transform: rotate(15deg);
+  transform: scale(1.1);
+}
+.fauna-content2 :hover{
+  transform: rotate(15deg);
+  transform: scale(1.1);
+} */
+.fauna-content2 h2{
+  color: #fff;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.fauna-content1 h2{
+  color: #fff;
+  font-weight: bold;
+  padding-top: 10px;
+}
