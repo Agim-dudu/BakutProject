@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TesrController;
 use App\Http\Controllers\FloraController;
+use App\Http\Controllers\FasilitasController;
 use App\Http\Controllers\Auth\LoginController;
 
 
@@ -26,3 +27,9 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/login', [LoginController::class, 'show'])->name('login');
 Route::get('/test', [TesrController::class, 'show'])->name('test');
 Route::get('/flora', [FloraController::class, 'show'])->name('flora');
+
+Route::get('/fasilitas1', [FasilitasController::class, 'show1'])->name('fasilitas1');
+Route::get('/fasilitas2', [FasilitasController::class, 'show2'])->name('fasilitas2');
+Route::get('/fasilitas3', [FasilitasController::class, 'show3'])->name('fasilitas3');
+Route::get('/fasilitas4', [FasilitasController::class, 'show4'])->name('fasilitas4');
+

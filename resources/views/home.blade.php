@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="{{ asset('/') }}assets/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('/') }}assets/fonts/icomoon/style.css">
@@ -15,7 +15,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('/') }}assets/css/bootstrap.min.css">
-    
+
     <!-- Style -->
     <link rel="stylesheet" href="{{ asset('/') }}assets/css/style.css">
 
@@ -61,22 +61,50 @@
                 <a class="nav-link" href="{{ route('login') }}">Klik login</a>
               </li>
             </ul>
-            
+
           </div>
         </div>
       </nav>
     </header>
     <!-- END header -->
-    
 
-    <div class="hero" style="background-image: url('{{ asset('/') }}assets/images/home.png')"> 
+
+    <div class="hero" style="background-image: url('{{ asset('/') }}assets/images/home.png')">
       <div style='padding-left:80px; padding-top:400px'>
         <p style="color:azure; font-size:70px; font-weight:bold;">Selamat Datang</p>
         <p style="color:azure; font-size:50px; font-weight:bold;">Buka Setiap Hari Kecuali Jum'at</p>
         <Button style="font-weight:bold; font-size:20px; padding:9px; border-radius:10px; background-color:#259632; color:white;">Jelajahi</Button>
       </div>
-      
+
     </div>
+    <div class="hero1" id="fasilitas">
+        <div class="contain1f">
+            <h1 class="fasilitasf">Fasilitas yang Tersedia di Pulau Bakut</h1><br>
+            <div class="contain2f">
+            <div class="boxf">
+                <a href="{{ route('fasilitas1') }}">
+                <img src="{{ asset('assets/images/mosque.png') }}" alt="#" width="280px" height="280px">
+                </a>
+            </div>
+            <div class="boxf">
+                <a href="{{ route('fasilitas2') }}">
+                <img src="{{ asset('assets/images/lodge.png') }}" alt="#" width="280px" height="280px">
+                </a>
+            </div>
+            <div class="boxf">
+                <a href="{{ route('fasilitas3') }}">
+                <img src="{{ asset('assets/images/toilet.png') }}" alt="#" width="280px" height="280px">
+            </a>
+            </div>
+            <div class="boxf">
+                <a href="{{ route('fasilitas4') }}">
+                <img src="{{ asset('assets/images/gazebo.png') }}" alt="#" width="280px" height="280px">
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+
     {{-- <div class="hero2" ></div> --}}
 
     <div class="hero2" id="peta">
@@ -88,7 +116,7 @@
         <div class="fauna-content1" >
           <a href="{{ route('flora') }}">
             <img src="{{ asset('assets/images/bekantann.jpg') }}" alt="#" width="200px" height="250px">
-          <div class="konten">
+        <div class="konten">
             <h2>Flora</h2>
         <div class="fauna-content2" style="padding-top: 20px;">
           <a href="{{ route('flora') }}">
@@ -96,12 +124,14 @@
           <div class="konten">
             <h2>Flora</h2>
           </div>
-        </a>
+            </a>
+            </div>
+            </div>
+            </div>
         </div>
-      </div>
     </div>
 
-  
+
 
 
     <script src="{{ asset('/') }}assets/js/jquery-3.3.1.min.js"></script>
