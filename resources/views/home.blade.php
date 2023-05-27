@@ -74,6 +74,8 @@
         <p style="color:azure; font-size:70px; font-weight:bold;">Selamat Datang</p>
         <p style="color:azure; font-size:50px; font-weight:bold;">Buka Setiap Hari Kecuali Jum'at</p>
         <Button style="font-weight:bold; font-size:20px; padding:9px; border-radius:10px; background-color:#259632; color:white;">Jelajahi</Button>
+        <Button style="font-weight:bold; font-size:20px; padding:9px; border-radius:10px; background-color:#259632; color:white;"><a href="/order" style="color:white;">Beli Tiket</a></Button>
+
       </div>
 
     </div>
