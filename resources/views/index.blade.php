@@ -75,29 +75,39 @@
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
+        @if(Auth::check())
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="service.html" class="nav-item nav-link">Tiket</a>
+                <a href="service.html" class="nav-item nav-link">Deskripsi</a>
+                <a href="service.html" class="nav-item nav-link">Flora & Fauna</a>
+                <a href="contact.html" class="nav-item nav-link">Galeri</a>
+                <a href="contact.html" class="nav-item nav-link">Fasilitas</a>
+                <a href="contact.html" class="nav-item nav-link">Denah</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Konten</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Deskripsi</a>
-                        <a href="quote.html" class="dropdown-item">Flora & Fauna</a>
-                        <a href="team.html" class="dropdown-item">Galeri</a>
-                        <a href="testimonial.html" class="dropdown-item">Tentang Kami</a>
-                        <a href="404.html" class="dropdown-item">Fasilitas</a>
+                        <a href="feature.html" class="dropdown-item">My Profile</a>
+                        <a href="feature.html" class="dropdown-item">Tiket</a>
+                        <a href="feature.html" class="dropdown-item">Games</a>
+                        <a href="quote.html" class="dropdown-item">Quiz</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Denah</a>
             </div>
-            @if(Auth::check())
                 <form action="{{ route('logout') }}" method="POST" style="display: inline">
                     @csrf
-                    <button type="submit" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Logout<i class="fa fa-arrow-right ms-3"></i></button>
+                    <button type="submit" style="background-color: rgb(215, 0, 0)" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Logout<i class="fa fa-arrow-right ms-3"></i></button>
                 </form>
             @else
-                <a href="{{ route('login') }}" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Sign<i class="fa fa-arrow-right ms-3"></i></a>
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="service.html" class="nav-item nav-link">Deskripsi</a>
+                <a href="service.html" class="nav-item nav-link">Flora & Fauna</a>
+                <a href="contact.html" class="nav-item nav-link">Galeri</a>
+                <a href="contact.html" class="nav-item nav-link">Facility</a>
+                <a href="contact.html" class="nav-item nav-link">Maps</a>
+            </div>
+                <a href="{{ route('login') }}" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Sign in<i class="fa fa-arrow-right ms-3"></i></a>
             @endif
         </div>
     </nav>
