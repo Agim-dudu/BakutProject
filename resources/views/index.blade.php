@@ -30,6 +30,8 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('/') }}assets/css/style.css" rel="stylesheet">
+    <link href="{{ asset('/') }}assets/css/fasilitas.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -290,7 +292,8 @@
                     <p class="mb-4">Pemandangan yang indah, udara yang segar dan kemudahan aksesnya, menjadikan pulau Bakut yang berstatus sebagai Taman Wisata Alam menjadi pilihan destinasi wisata petualangan.<br>
                     Jalur tracking sepanjang 650 meter tersedia untuk para pengunjung yang ingin berkeliling menikmati hijaunya Pulau Bakut. Jika beruntung, wisatawan bisa menyaksikan secara langsung sekelompok bekantan duduk manis di pohon.<br>
                     Selain itu, ketika berada di Pulau Bakut, pengunjung bisa menyaksikan pemandangan alam dengan latar belakang jembatan Barito yang berdiri kokoh. Pengunjung bisa hanya jalan santai sambil menikmati udara segar dan sesekali berswafoto dengan latar belakang hutan hijau dan jembatan Barito yang membentang.</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                    <a class="btn btn-primary py-3 px-4" href="/order">Pesan Tiket</a>
+                    
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-4 align-items-center">
@@ -524,6 +527,39 @@
         </div>
     </div>
     <!-- Projects End -->
+
+    <div class="wadahfasilitas">
+        <section class="services" id="services">
+            <h1>Fasilitas</h1>
+            <p class="desc">beberapa Fasilitas yang tersedia di pulau bakut yaitu mushola, toilet, menara pandang, gazebo.</p>
+            <div class="services-cards">
+                <div class="services-card">
+                    <img src="assets/img/fasilitas/mosque2.jpg" alt="">
+                    <h3>Mushola</h3>
+                    <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet</p>
+                    {{--  <a href="">Learn More</a>  --}}
+                </div>
+                <div class="services-card">
+                    <img src="assets/img/fasilitas/toilet2.jpg" alt="">
+                    <h3>Toilet Umum</h3>
+                    <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet</p>
+                    {{--  <a href="">Learn More</a>  --}}
+                </div>
+                <div class="services-card">
+                    <img src="assets/img/fasilitas/tower2.jpg" alt="">
+                    <h3>Menara Pandang</h3>
+                    <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet</p>
+                    {{--  <a href="">Learn More</a>  --}}
+                </div>
+                <div class="services-card">
+                    <img src="assets/img/fasilitas/gazebo2.jpg" alt="">
+                    <h3>Gazebo</h3>
+                    <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet</p>
+                    {{--  <a href="">Learn More</a>  --}}
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">

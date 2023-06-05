@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\TestController;
 use Laravel\Socialite\Facades\Socialite;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PuzzleController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
@@ -63,4 +64,8 @@ Route::group(['middleware' => ['auth']], function () {
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/order', [OrderController::class, 'index']);
+Route::post('/checkout', [OrderController::class, 'checkout']);
+Route::get('/invoice/{id}', [OrderController::class, 'invoice']);
 
