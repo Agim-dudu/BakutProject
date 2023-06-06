@@ -9,6 +9,7 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PuzzleController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\florafaunaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -69,3 +70,9 @@ Route::get('/order', [OrderController::class, 'index']);
 Route::post('/checkout', [OrderController::class, 'checkout']);
 Route::get('/invoice/{id}', [OrderController::class, 'invoice']);
 
+Route::group(['middleware' => 'web'], function () {
+    Route::resource('puzzles', florafaunaController::class)->only(['index', 'create', 'store', 'edit', 'update']);
+    Route::delete('/puzzles/{puzzle}', [florafaunaController::class, 'destroy'])->name('puzzles.destroy');
+});
+Route::get('/puzzles/{puzzle}/edit', [florafaunaController::class, 'edit'])->name('puzzles.edit');
+Route::delete('/puzzles/{puzzle}', [florafaunaController::class, 'destroy'])->name('puzzles.destroy');
