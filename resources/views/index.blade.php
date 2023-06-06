@@ -121,7 +121,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <h1 class="display-1 text-white mb-5 animated slideInDown">Selamat Datang <br>Di Wisata Pulau Bakut</h1>
-                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Pesan Tiket</a>
                                 </div>
                             </div>
                         </div>
@@ -133,8 +133,8 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
-                                    <h1 class="display-1 text-white mb-5 animated slideInDown">Buka Setiap Hari Kecuali Jumat</h1>
-                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">Nikmati liburan ke pulau Bakut hanya dengan Rp.10.000 saja</h1>
+                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Pesan Tiket</a>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +181,7 @@
                 <div class="col-md-2">
                   <div class="bg-white rounded-3 shadow p-3 d-flex justify-content-between align-items-center" >
                     <div>
-                      <a class="flora" href="florafauna">Flora&Fauna</a>
+                        <h5>Flora&Fauna</h5>
                     </div>
                     <img src="{{ asset('assets/icons/forest.png') }}" height="40"
                     width="40" alt="">
@@ -501,9 +501,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="{{ asset('/') }}assets/img/dsc01605.jpg" alt="">
+                        <img class="img-fluid" src="{{ asset('/') }}assets/img/fasilitas/depan2.jpg" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">?</h4>
+                            <h4 class="text-white mb-4">Gerbang Masuk</h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="{{ asset('/') }}assets/img/dsc01605.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
