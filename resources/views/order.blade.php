@@ -12,6 +12,9 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            width: 100%;
+            background-image: url("assets/img/fasilitas/depan2.jpg");
+            background-size: cover;
         }
 
         .container {
@@ -21,11 +24,13 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 90%;
         }
 
         h1 {
             text-align: center;
         }
+        .tarif{}
 
         input[type="text"],
         input[type="number"] {
@@ -57,8 +62,14 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Pembelian Tiket</h1>
+    <div class="container" data-image-src="assets/img/fasilitas/tower2.jpg">
+        <h1>Tiket</h1>
+        <div class="tarif">
+            <h3>Tarif Masuk</h3>
+            <p>Rp.10.000 / Orang</p>
+        </div><br>
+    
+        <h3>Pembelian Tiket</h3>
         <form method="POST" action="/checkout">
             @csrf
             <input type="text" name="name" id="name" placeholder="Nama Lengkap" required>
