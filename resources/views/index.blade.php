@@ -340,100 +340,26 @@
                 <h1 class="display-5 mb-5">Flora & Fauna</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="{{ asset('/') }}assets/img/monyetb.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="{{ asset('/') }}assets/img/icon/monkey.png" alt="Icon">
+                @foreach($puzzles as $puzzle)
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded d-flex h-100">
+                            <div class="service-img rounded">
+                                <img class="img-fluid" src="{{ Storage::url($puzzle->image_path) }}" alt="">
                             </div>
-                            <h4 class="mb-3">Bekantan</h4>
-                            <p class="mb-4">Bekantan (Nasalis larvatus) adalah salah satu jenis satwa primata yang ada di Indonesia.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square rounded-circle mx-auto mb-3">
+                                    <img class="img-fluid" src="{{ Storage::url($puzzle->icon) }}" alt="Icon">
+                                </div>
+                                <h4 class="mb-3">{{ $puzzle->title }}</h4>
+                                <p class="mb-4">{{ $puzzle->description }}</p>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="{{ Storage::url($puzzle->image_path) }}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="{{ asset('/') }}assets/img/bkntn.jpeg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="{{ asset('/') }}assets/img/icon/monkey.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Bekantan</h4>
-                            <p class="mb-4">Bekantan merupakan satwa arboreal atau satwa yang hidup di pohon, namun terkadang turun ke lantai hutan untuk alasan tertentu.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="{{ asset('/') }}assets/img/bekantan.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="{{ asset('/') }}assets/img/icon/monkey.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Bekantan</h4>
-                            <p class="mb-4">Bekantan juga merupakan salah satu dari sekian banyak spesies satwa endemik Indonesia yang populasinya semakin terancam.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="{{ asset('/') }}assets/img/flora1.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="{{ asset('/') }}assets/img/icon/freesia.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Flora 1</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="{{ asset('/') }}assets/img/flora2.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="{{ asset('/') }}assets/img/icon/freesia.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Flora2</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="{{ asset('/') }}assets/img/flora3.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="{{ asset('/') }}assets/img/icon/freesia.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Flora3</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
-    <!-- Service End -->
 
     <!-- Projects Start -->
     <div class="container-xxl py-5">

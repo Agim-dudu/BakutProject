@@ -13,7 +13,7 @@ class florafaunaController extends Controller
     {
         $puzzles = florafauna::all();
 
-        return view('puzzles.index', compact('puzzles'));
+        return view('puzzles.home', compact('puzzles'));
     }
 
     public function create()
@@ -51,32 +51,43 @@ class florafaunaController extends Controller
     }
 
     public function update(Request $request, string $id)
-    {
-        $puzzle = florafauna::findOrFail($id);
+{
+    $puzzle = florafauna::findOrFail($id);
 
-        $request->validate([
-            'title' => 'required',
+    $request->validate([
+        'title' => 'required',
         'description' => 'required',
-            'image' => 'required|image|max:8192',
-            'icon' => 'required|image|max:4096',
-        ]);
+        'image' => 'image|max:8192',
+        'icon' => 'image|max:4096',
+    ]);
 
+    // Periksa apakah input gambar baru telah diberikan
+    if ($request->hasFile('image')) {
         // Hapus gambar lama
         Storage::delete($puzzle->image_path);
 
+        // Upload gambar baru
         $imagePath = $request->file('image')->store('public/images');
-        $icon = $request->file('icon')->store('public/images/icon');
-
-        $puzzle->update([
-            'title' => $request->title,
-        'description' => $request->description,
-            'image_path' => $imagePath,
-            'icon' => $icon,
-        ]);
-
-        return redirect()->route('puzzles.index')->with('success', 'Data berhasil diperbarui');
+        $puzzle->image_path = $imagePath;
     }
 
+    // Periksa apakah input ikon baru telah diberikan
+    if ($request->hasFile('icon')) {
+        // Hapus ikon lama
+        Storage::delete($puzzle->icon);
+
+        // Upload ikon baru
+        $icon = $request->file('icon')->store('public/images/icon');
+        $puzzle->icon = $icon;
+    }
+
+    // Update data lainnya
+    $puzzle->title = $request->title;
+    $puzzle->description = $request->description;
+    $puzzle->save();
+
+    return redirect()->route('puzzles.index')->with('success', 'Data berhasil diperbarui');
+}
     public function destroy(string $id)
     {
         $puzzle = florafauna::findOrFail($id);

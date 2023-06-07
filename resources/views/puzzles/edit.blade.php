@@ -60,10 +60,20 @@
             <div class="form-group">
                 <label for="image">Gambar :</label>
                 <input type="file" class="form-control" id="image" name="image">
+                @if ($puzzle->image_path)
+                    <img src="{{ Storage::url($puzzle->image_path) }}" alt="Gambar" style="max-width: 200px; margin-top: 10px;">
+                @else
+                    <p>Tidak ada gambar saat ini</p>
+                @endif
             </div>
             <div class="form-group">
                 <label for="icon">Icon :</label>
                 <input type="file" class="form-control" id="icon" name="icon">
+                @if ($puzzle->icon)
+                    <img src="{{ Storage::url($puzzle->icon) }}" alt="Current Icon" style="max-width: 50px; margin-top: 10px;">
+                @else
+                    <p>Tidak ada ikon saat ini</p>
+                @endif
             </div>
             <button type="submit" class="btn btn-primary">Perbaharui Data</button>
         </form>
