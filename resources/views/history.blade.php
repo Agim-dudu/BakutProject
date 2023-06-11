@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>list Pembelian</title>
+    <title>List Pembelian Tiket</title>
     <style>
         table {
+            margin-top: 20px;
             border-collapse: collapse;
             width: 100%;
         }
@@ -12,12 +13,19 @@
             padding: 8px;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #259632;
+            color: white;
+        }
+        .btncari{
+            background-color: #259632;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h2>list Pembelian</h2>
+    <h2>List Pembelian Tiket</h2>
+    <input type="text" id="searchInput" placeholder="Cari No Tiket">
+    <button class="btncari" onclick="search()">Cari</button>
     <table>
         <thead>
             <tr>
@@ -48,5 +56,27 @@
             @endforeach
         </tbody>
     </table>
+
+    <script>
+        function search() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementsByTagName("table")[0];
+            tr = table.getElementsByTagName("tr");
+
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>

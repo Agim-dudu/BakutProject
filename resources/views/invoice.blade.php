@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pembelian Tiket</title>
+    <title>Tiket</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,6 +24,8 @@
         }
 
         h1 {
+            background: #259632;
+            color: white;
             text-align: center;
         }
 
@@ -52,27 +54,31 @@
 </head>
 <body>
     <div class="container">
-        <h1>Detail Pesanan</h1>
+        <h1>Tiket Pulau Bakut</h1>
         <table>
+            <tr>
+                <td>No</td>
+                <td> : {{$order->id}}</td>
+            </tr>
             <tr>
                 <td>Nama</td>
                 <td> : {{$order->name}}</td>
             </tr>
             <tr>
-                <td>email</td>
+                <td>Email</td>
                 <td> : {{$order->address}}</td>
             </tr>
             <tr>
-                <td>no hp</td>
+                <td>No.Telp</td>
                 <td> : {{$order->phone}}</td>
-            </tr>
+            </tr><br>
             <tr>
-                <td>Qty</td>
+                <td>Jumlah</td>
                 <td> : {{$order->qty}}</td>
             </tr>
             <tr>
                 <td>Total Bayar</td>
-                <td> : {{$order->total_price}}</td>
+                <td> : Rp.{{$order->total_price}}</td>
             </tr>
             <tr>
                 <td>Status</td>
