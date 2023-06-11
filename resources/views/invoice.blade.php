@@ -3,21 +3,10 @@
 <head>
     <title>Tiket</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
         .container {
             max-width: 400px;
             margin: 0 auto;
-            background-color: #fff;
+            background-color: #f0f0f0;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -26,6 +15,9 @@
         h1 {
             background: #259632;
             color: white;
+            text-align: center;
+        }
+        h3 {
             text-align: center;
         }
 
@@ -54,7 +46,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Tiket Pulau Bakut</h1>
+        <h1>Tiket Masuk</h1>
+        <h3>Taman Wisata Alam Pulau Bakut</h3>
         <table>
             <tr>
                 <td>No</td>

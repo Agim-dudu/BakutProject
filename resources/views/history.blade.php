@@ -37,7 +37,7 @@
                 <th>Nama</th>
                 <th>Email</th>
                 <th>No.Telp</th>
-                <th>Jumlah Tiket</th>
+                <th>Jumlah</th>
                 <th>Bayar</th>
                 <th>Status</th>
                 <th>Waktu Pembelian</th>
