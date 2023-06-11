@@ -82,3 +82,4 @@ Route::delete('/puzzles/{puzzle}', [florafaunaController::class, 'destroy'])->na
 Route::get('/', [DashboardController::class, 'index']);
 
 Route::get('/history', [HistoryController::class, 'index']);
+Route::post('/orders/{id}/update-status', [OrderController::class, 'updateStatus'])->name('updateStatus');

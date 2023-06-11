@@ -76,5 +76,13 @@ class OrderController extends Controller
     $dompdf->stream('invoice.pdf', ['Attachment' => false]);
 
     }
+    public function updateStatus($id)
+{
+    $order = Order::find($id);
+    $order->status = 'Digunakan';
+    $order->save();
+
+    return redirect()->back();
+}
 
 }

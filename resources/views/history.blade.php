@@ -20,6 +20,10 @@
             background-color: #259632;
             color: white;
         }
+        .btngunakan{
+            background-color: #259632;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -37,7 +41,7 @@
                 <th>Bayar</th>
                 <th>Status</th>
                 <th>Waktu Pembelian</th>
-                <th>Waktu Pembayaran</th>
+                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -51,7 +55,16 @@
                     <td>{{ $order->total_price }}</td>
                     <td>{{ $order->status }}</td>
                     <td>{{ $order->created_at }}</td>
-                    <td>{{ $order->updated_at }}</td>
+                    <td>
+                        @if($order->status == 'Digunakan')
+                            Digunakan
+                        @else
+                            <form action="{{ route('updateStatus', $order->id) }}" method="POST">
+                                @csrf
+                                <button class="btngunakan" type="submit">Gunakan</button>
+                            </form>
+                        @endif
+                    </td>
                 </tr>
             @endforeach
         </tbody>
