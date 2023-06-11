@@ -41,6 +41,7 @@
                 <th>Bayar</th>
                 <th>Status</th>
                 <th>Waktu Pembelian</th>
+                <th>Waktu Status</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -55,9 +56,13 @@
                     <td>{{ $order->total_price }}</td>
                     <td>{{ $order->status }}</td>
                     <td>{{ $order->created_at }}</td>
+                    <td>{{ $order->updated_at }}</td>
+                    
                     <td>
                         @if($order->status == 'Digunakan')
                             Digunakan
+                            @elseif($order->status == 'belum di Bayar')
+                            <button class="btnbelumgunakan" disabled>Gunakan</button>
                         @else
                             <form action="{{ route('updateStatus', $order->id) }}" method="POST">
                                 @csrf
