@@ -16,6 +16,12 @@
             background-color: #259632;
             color: white;
         }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
         .btncari{
             background-color: #259632;
             color: white;
@@ -27,7 +33,7 @@
     </style>
 </head>
 <body>
-    <h2>List Pembelian Tiket</h2>
+    <h1>List Pembelian Tiket</h1>
     <input type="text" id="searchInput" placeholder="Cari No Tiket">
     <button class="btncari" onclick="search()">Cari</button>
     <table>
