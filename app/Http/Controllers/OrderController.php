@@ -56,24 +56,23 @@ class OrderController extends Controller
         }
     }
     public function invoice($id){
-        // $order = Order::find($id);
-        // return view('invoice', compact('order'));
+        
 
         $order = Order::find($id);
 
-    // Render the HTML to PDF
+    
     $options = new Options();
     $options->setIsRemoteEnabled(true);
     $dompdf = new Dompdf($options);
     $dompdf->loadHtml(view('invoice', compact('order')));
 
-    // (Optional) Setup the paper size and orientation
+    
     $dompdf->setPaper('A4', 'portrait');
 
-    // Render the PDF
+    
     $dompdf->render();
 
-    // Output the generated PDF to the browser
+    
     $dompdf->stream('invoice.pdf', ['Attachment' => false]);
 
     }
