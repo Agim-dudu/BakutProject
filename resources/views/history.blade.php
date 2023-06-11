@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Order List</title>
+    <title>list Pembelian</title>
     <style>
         table {
             border-collapse: collapse;
@@ -17,19 +17,19 @@
     </style>
 </head>
 <body>
-    <h2>Order List</h2>
+    <h2>list Pembelian</h2>
     <table>
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Address</th>
-                <th>Phone</th>
-                <th>Quantity</th>
-                <th>Total Price</th>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>No.Telp</th>
+                <th>Jumlah Tiket</th>
+                <th>Bayar</th>
                 <th>Status</th>
-                <th>Created At</th>
-                <th>Updated At</th>
+                <th>Waktu Pembelian</th>
+                <th>Waktu Pembayaran</th>
             </tr>
         </thead>
         <tbody>
