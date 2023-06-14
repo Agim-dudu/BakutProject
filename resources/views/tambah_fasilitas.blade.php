@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
+    <link href="{{ asset('/') }}assets/css/admin/create.css" rel="stylesheet">
 
 </head>
-<body>
+<body style="background-image: url({{ asset('assets/img/dubai.jpg') }}); ">
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Admin</a>
@@ -35,7 +35,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="building">
         <form action="{{ route('admin.data_fasilitas.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">

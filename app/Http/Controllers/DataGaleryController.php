@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Galery;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -11,6 +12,7 @@ class DataGaleryController extends Controller
     // Menampilkan semua data
     public function index()
     {
+        $data['users'] = User::all();
         $data['galery'] = galery::all();
         return view('data_galery', $data);
     }

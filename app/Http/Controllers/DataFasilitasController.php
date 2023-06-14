@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Fasilitas;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -12,6 +13,7 @@ class DataFasilitasController extends Controller
     //menampilkan semua data
     public function index()
     {
+        $data['users'] = User::all();
         $data['fasilitas'] = Fasilitas::all();
         return view('data_fasilitas',$data);
     }

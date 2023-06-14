@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\FloraFauna;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -13,6 +14,7 @@ class DataFloraFaunaController extends Controller
     // Menampilkan semua data
     public function index()
     {
+        $data['users'] = User::all();
         $data['florafauna'] = FloraFauna::all();
         return view('data_florafauna', $data);
     }

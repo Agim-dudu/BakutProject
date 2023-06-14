@@ -16,8 +16,6 @@ class DataPenggunaController extends Controller
     public function index()
     {
         $data['users'] = User::all();
-
-
         return view('data_pengguna',$data);
     }
     public function logout()

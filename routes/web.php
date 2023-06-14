@@ -44,6 +44,7 @@ Route::get('/register', [RegisterController::class, 'show'])->name('register');
 Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
 
 
+
 Route::get('/', [HomeController::class, 'show'])->name('index');
 
 Route::post('/hubungi-kami', [ContactController::class, 'store'])->name('contact.store');    
